@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -69,6 +70,7 @@ table {
 }
 
 table td, table th {
+    white-space: nowrap;
     padding: 1rem;
     border: 0.1rem solid var(--yellow-color);
     text-align: left;

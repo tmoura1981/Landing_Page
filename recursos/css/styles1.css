@@ -1,6 +1,6 @@
 .intro-content {
     position: relative;
-    top: -8rem;
+    
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -80,4 +80,67 @@
 
 .gallery-img img:hover {
     transform: translate(-3%, -3%) scale(1.2) rotate(5deg);
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);    
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    
+}
+
+.form-group {
+    flex: 1 1 32rem;   
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color)
+}
+
+.form-group ::placeholder {
+    color: var(--primary-color);
+    font-family: sans-serif;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+.footer a {
+    color: var(--light-yellow-color);
 }
